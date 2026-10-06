@@ -1,0 +1,134 @@
+@media screen and (max-width:1200px){
+    a.icon-wrapper:link,
+a.icon-wrapper:visited{
+    display: block;
+}
+nav a.red-btn{
+    display: none;
+}
+header img{
+    width: 280px;
+}
+ul#nav-main{
+     width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    background-color:red;
+    transition: all 0.4s;
+
+}
+ul#nav-main.show{
+    right: 0;
+}
+ul#nav-main li{
+    display: block;
+    margin: 10px;
+        margin: 0;
+        
+}
+ul#nav-main li a:link,
+ul#nav-main li a:visited{
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+ul#nav-main li a:hover{
+    color: white;
+}
+#feature-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.feature{
+    flex-basis: 100%;
+}
+.chef-information{
+    background-image: none;
+}
+}
+
+@media screen and (max-width:992px){
+
+    #about-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-item{
+        flex-basis: 50%;
+    }
+    #price-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .price{
+        flex-basis: 100%;
+    }
+    #food-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    #table-wrapper{
+    top: 70px;
+     left: -100px;
+}
+.chef{
+    display: block;
+   
+}
+
+}
+@media screen and (max-width:768px){
+    .main-caption h1{
+        font-size: 35px;
+    }
+     .about-item{
+        flex-basis: 100%;
+    }
+    .price img{
+        display: none;
+    }
+    #table-wrapper{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #reservation{
+        flex-wrap: wrap;
+    }
+    .reserv{
+        flex-basis: 100%;
+    }
+    .left-reserv{
+        display: none;
+    }
+    #blog-wrapper{
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    #column-wrapper{
+        flex-wrap: wrap;
+    }
+    .column{
+        flex-basis: 50%;
+         
+    }
+    #copy-wrapper{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:576px){
+     #food-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+  
+    
+    #custom-wrapper{
+        width: 300px;
+    }
+}

@@ -1,0 +1,641 @@
+@font-face {
+    font-family: 'myIranYekan';
+    font-weight: normal;
+    src: url("my_fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+    url("my_fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+    url("my_fonts/iranyekan/woff2/iranyekanwebregular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'myIranYekan';
+    font-weight: bold;
+    src: url("my_fonts/iranyekan/ttf/iranyekanwebbold.ttf") format('truetype'),
+    url("my_fonts/iranyekan/woff/iranyekanwebbold.woff") format('woff'),
+    url("my_fonts/iranyekan/woff2/iranyekanwebbold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'myPinar';
+    font-weight: bold;
+    src: url("my_fonts/pinar/Pinar-Bold.ttf") format('truetype'),
+    url("my_fonts/pinar/Pinar-Bold.woff2") format('woff2');
+}
+:root{
+    --primeryColor:red;
+}
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    font-family: 'myIranYekan', "B Yekan", Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+html , body{
+            scroll-behavior: smooth;
+        }
+body{
+  direction: rtl;
+  
+}
+header{
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid rgb(133, 133, 133);
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+a.icon-wrapper:link,
+a.icon-wrapper:visited{
+    color: white;
+    background-color: var(--primeryColor);
+    font-size: 30px;
+    padding: 7px;
+    display: none;
+}
+header img{
+    width: 200px;
+}
+ul#nav-main{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+     
+}
+ul#nav-main li{
+    display: inline-block;
+    margin: 0 20px;
+}
+ul#nav-main li a:link,
+ul#nav-main li a:visited{
+color:white;
+    transition: all 0.3s;
+}
+ul#nav-main li a:hover{
+    color: var(--primeryColor);
+}
+.red-btn{
+    background-color:var(--primeryColor);
+    color: white;
+    border: 3px solid var(--primeryColor) ;
+    border-radius: 20px;
+    padding:7px 20px;
+    width: 110px;
+    text-align: center;
+    transition: all 0.3s;
+    
+}
+.red-btn:hover{
+    background-color: transparent;
+}
+.swiper{
+    width: 100%;
+    height: 100vh;
+    direction: ltr;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.swiper-slide{
+    position: relative;
+}
+.swiper-slide::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 107, 107, 0.25);
+
+}
+.main-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 5;
+}
+.main-caption h4{
+    color: var(--primeryColor);
+    margin-bottom: 10px;
+      font-family: 'myPinar';
+}
+.main-caption h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'myPinar';
+}
+.main-caption p{
+    margin-bottom: 20px;
+}
+#about-us{
+    background-color: rgb(235, 232, 232);
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+#about-wrapper{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.about-item{
+    padding: 25px;
+    flex-basis: 50%;
+}
+.about-item img{
+    width: 100%;
+    border: 5px solid var(--primeryColor);
+}
+.about-content{
+    background-image: url(../image/back.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+ .sup-title{
+    color: var(--primeryColor);
+    text-align: center;
+    
+}
+.title{
+    font-size: 35px;
+    text-align: center;
+   
+}
+.about-content p{
+    line-height: 29px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: rgb(43, 42, 42);
+}
+#features{
+    position: relative;
+    background-image: url(../image/bread-making.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#features::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(8, 8, 8, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#feature-wrapper{
+    
+    min-height:380px;
+    padding: 40PX;
+    display: flex;
+    position: relative;
+    z-index: 5;
+}
+.feature{
+    flex-basis: 25%;
+    text-align: center;
+    padding: 50px;
+    
+    
+}
+.img-wrapper{
+    border: 5px solid var(--primeryColor);
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 50%;
+    
+}
+.img-wrapper img{
+    width: 100%;
+}
+.feature h2{
+    color: white;
+    margin-top: 15px;
+}
+.feature p{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#our-menu{
+    background-color: rgb(235, 232, 232);
+    padding: 20px;
+}
+#our-menu h2,#our-menu h4{
+    text-align: center;
+}
+#menu-wrapper{
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+   gap: 20px 40px;
+   justify-content: center;
+   margin-top: 20px;
+}
+.menu{
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+}
+.menu h3{
+   color: rgb(109, 108, 108);
+   font-family: 'myPinar';
+
+}
+.menu p{
+    font-size: 14px;
+    color: rgb(59, 59, 59);
+    text-align: justify;
+    margin-top: 10px;
+}
+.menu span{
+    color: var(--primeryColor);
+    font-weight: bold;
+}
+.menu::after{
+    content: "۲۰ ت";
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    background-color: var(--primeryColor);
+    color: white;
+    padding: 15px;
+    padding-top: 3px;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+#prices{
+    background-image: url(../image/wood.jpg);
+    min-height: 200px;
+    padding: 30px;
+}
+#prices h2{
+    color: white;
+}
+#price-wrapper{
+    position: relative;
+    min-height: 100px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+.price{
+    flex-basis: 50%;
+}
+#table-wrapper{
+    border: 7px solid rgb(233, 229, 229);
+    background-color: white;
+    min-height: 80px;
+      width: 500px;
+     border-collapse: separate;
+     border-spacing: 1px;
+     padding: 30px;
+     position: relative;
+     z-index: 5;
+     top: 30px;
+     left: 70px;
+}
+#table-wrapper h4{
+    color: var(--primeryColor);
+}
+
+#food-table tr, #food-table td{
+    width: 900px;
+     padding: 10px;
+    
+}
+#food-table thead tr{
+    background-color: var(--primeryColor);
+    color: white;
+}
+#food-table tbody tr:nth-child(even){
+    background-color: rgb(230, 230, 230);
+}
+#chefs{
+     background-color: rgb(235, 232, 232);
+     
+}
+#chef-wrapper{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ 
+  }
+.chef{
+    border: 7px solid rgb(207, 205, 205);
+    min-height: 100px;
+    display: flex;
+   
+}
+.chef-information,.chef-img{
+    flex-basis: 50%;
+}
+.chef-img{
+  
+}
+
+
+.chef-information{
+    background-color: white;
+    background-image: url(../image/signature.png);
+    background-repeat: no-repeat;
+    background-position: 50px 400px;
+    padding: 30px;
+}
+.chef-information p{
+    color: rgb(102, 102, 102);
+    padding-top: 20px;
+    font-size: 15px;
+}
+#reservation{
+    min-height: 400px;
+    display: flex;
+    margin-bottom: 80px;
+}
+.reserv{
+    flex-basis: 50%;
+    
+}
+.reserv h2{
+    color: white;
+}
+.right-reserv{
+    background-image: url(../image/backblack.jpg);
+}
+.left-reserv {
+    background-image: url(../image/special-restaurant-furniture.webp);
+}
+#form-wrapper{
+    min-height: 100px;
+    padding: 10px;
+    text-align: center;
+}
+.form-control{
+    width: 80%;
+    font-size:15px;
+    padding: 10px;
+    margin: 10px auto;
+}
+.form-btn{
+    margin: 10px;
+    display: inline-block;
+}
+#message{
+    height: 100px;
+}
+#foods{
+    
+    min-height: 300px;
+    margin-bottom: 50px;
+
+}
+#food-wrapper{
+    min-height: 100px;
+    display: grid;
+    margin-top: 20px;
+  grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.food{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.food img{
+   width: 100%;
+}
+.food::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: rgba(8, 8, 8, 0.8);
+    position: absolute;
+    opacity: 0;
+   transition: all 0.4s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.food:hover::after{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.food-caption{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.food:hover .food-caption{
+    opacity: 1;
+}
+#Comments{
+    min-height: 500px;
+    background-image: url(../image/drinkback2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 30px;
+    transition: all 0.3s;
+}
+#Comments::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#Comments h2{
+    color: white;
+}
+#Comments h2,#Comments h4{
+    z-index: 5;
+    position: relative;
+}
+#custom-wrapper{
+    text-align: center;
+    width: 500px;
+    padding: 0;
+    color: white;
+    position: relative;
+    margin: 10px auto;
+    z-index: 5;
+}
+#custom-img{
+    display: flex;
+    width: 100%;
+   
+    justify-content: center;
+    align-items: center;
+   
+}
+h2#user_name{
+    margin-bottom: 20px;
+}
+#custom-btn{
+      font-size: 50px;
+       align-items: center;
+      display: flex;
+      justify-content: center;
+     opacity: 1;
+}
+
+#custom-btn .fa-angle-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+#custom-btn .fa-angle-left{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+ 
+
+
+#blogs{
+    min-height: 200px;
+    background-color: rgb(235, 232, 232);
+    padding: 50px;
+}
+#blog-wrapper{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+.blog{
+    width: 300px;
+    height: 100px;
+}
+.blog img{
+    width: 100%;
+    height: 100%;
+}
+.blog p{
+    color: rgb(46, 45, 45);
+}
+#main-footer{
+    min-height: 200px;
+    background-image: url(../image/black.jpg);
+    padding: 50px;
+  
+}
+#column-wrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+   
+    flex-basis: 33%;
+    min-height: 100px;
+    position: relative;
+    padding: 40px;
+}
+.column h3{
+    color: white;
+    text-align: center;
+    
+}
+.column h3::after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: var(--primeryColor);
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.column p{
+    color: white;
+    text-align: center;
+    margin-top: 20px
+}
+#copyright{
+    background-color: black;
+    padding: 10px;
+    
+}
+#copy-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+#copy p{
+    color: white;
+}
+#social-link ul{
+padding: o;
+margin: 0;
+display: flex;
+list-style-type: none;
+}
+#social-link ul li a:link,
+#social-link ul li a:visited{
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+#social-link ul li a:hover{
+    color:var(--primeryColor);
+}
+
+
+
+
+
+
+  
+
+
